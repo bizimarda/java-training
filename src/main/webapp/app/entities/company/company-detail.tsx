@@ -42,12 +42,22 @@ export const CompanyDetail = (props: RouteComponentProps<{ id: string }>) => {
           </dt>
           <dd>{companyEntity.description}</dd>
           <dt>
+<<<<<<< HEAD
+=======
+            <span id="createdBy">
+              <Translate contentKey="javaTrainingApp.company.createdBy">Created By</Translate>
+            </span>
+          </dt>
+          <dd>{companyEntity.createdBy}</dd>
+          <dt>
+>>>>>>> Company Entity
             <span id="isActive">
               <Translate contentKey="javaTrainingApp.company.isActive">Is Active</Translate>
             </span>
           </dt>
           <dd>{companyEntity.isActive ? 'true' : 'false'}</dd>
           <dt>
+<<<<<<< HEAD
             <Translate contentKey="javaTrainingApp.company.createdBy">Created By</Translate>
           </dt>
           <dd>{companyEntity.createdBy}</dd>
@@ -73,6 +83,25 @@ export const CompanyDetail = (props: RouteComponentProps<{ id: string }>) => {
               <TextFormat value={companyEntity.lastModifiedDate} type="date" format={APP_DATE_FORMAT} blankOnInvalid />
             ) : null}
           </dd>
+=======
+            <span id="createdDate">
+              <Translate contentKey="javaTrainingApp.company.createdDate">Created Date</Translate>
+            </span>
+          </dt>
+          <dd>{companyEntity.createdDate}</dd>
+          <dt>
+            <span id="lastModifiedBy">
+              <Translate contentKey="javaTrainingApp.company.lastModifiedBy">Updated By</Translate>
+            </span>
+          </dt>
+          <dd>{companyEntity.lastModifiedBy}</dd>
+          <dt>
+            <span id="lastModifiedDate">
+              <Translate contentKey="javaTrainingApp.company.lastModifiedDate">Updated Date</Translate>
+            </span>
+          </dt>
+          <dd>{companyEntity.lastModifiedDate}</dd>
+>>>>>>> Company Entity
         </dl>
         <Button tag={Link} to="/company" replace color="info" data-cy="entityDetailsBackButton">
           <FontAwesomeIcon icon="arrow-left" />{' '}

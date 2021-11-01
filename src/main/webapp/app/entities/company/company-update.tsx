@@ -82,13 +82,27 @@ export const CompanyUpdate = (props: RouteComponentProps<{ id: string }>) => {
                   validate={{ required: true }}
                 />
               ) : null}
-              <ValidatedField label={translate('javaTrainingApp.company.name')} id="company-name" name="name" data-cy="name" type="text" />
+              <ValidatedField
+                label={translate('javaTrainingApp.company.name')}
+                id="company-name"
+                name="name"
+                data-cy="name"
+                type="text"
+                validate={{
+                  minLength: { value: 1, message: translate('entity.validation.minlength', { min: 1 }) },
+                  maxLength: { value: 100, message: translate('entity.validation.maxlength', { max: 100 }) },
+                }}
+              />
               <ValidatedField
                 label={translate('javaTrainingApp.company.description')}
                 id="company-description"
                 name="description"
                 data-cy="description"
                 type="text"
+                validate={{
+                  minLength: { value: 1, message: translate('entity.validation.minlength', { min: 1 }) },
+                  maxLength: { value: 100, message: translate('entity.validation.maxlength', { max: 100 }) },
+                }}
               />
               <ValidatedField
                 label={translate('javaTrainingApp.company.isActive')}

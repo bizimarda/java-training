@@ -21,10 +21,10 @@
       "name": "Name",
       "description": "Description",
       "isActive": "Is Active",
-      "createdBy": "Oluşturan",
-      "createdDate": "Oluşturma tarihi",
-      "lastModifiedBy": "Düzenleyen",
-      "lastModifiedDate": "Düzenleme tarihi"
+      "createdBy": "Created by",
+      "createdDate": "Created date",
+      "lastModifiedBy": "Modified by",
+      "lastModifiedDate": "Modified date"
     }
   }
 }

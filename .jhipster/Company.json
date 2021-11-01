@@ -2,11 +2,17 @@
   "fields": [
     {
       "fieldName": "name",
-      "fieldType": "String"
+      "fieldType": "String",
+      "fieldValidateRules": ["minlength", "maxlength"],
+      "fieldValidateRulesMinlength": "1",
+      "fieldValidateRulesMaxlength": "100"
     },
     {
       "fieldName": "description",
-      "fieldType": "String"
+      "fieldType": "String",
+      "fieldValidateRules": ["minlength", "maxlength"],
+      "fieldValidateRulesMinlength": "1",
+      "fieldValidateRulesMaxlength": "100"
     },
     {
       "fieldName": "isActive",
@@ -20,5 +26,5 @@
   "readOnly": false,
   "pagination": "pagination",
   "name": "Company",
-  "changelogDate": "20211101102418"
+  "changelogDate": "20211101142252"
 }

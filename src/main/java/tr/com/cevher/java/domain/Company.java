@@ -2,6 +2,10 @@ package tr.com.cevher.java.domain;
 
 import java.io.Serializable;
 import javax.persistence.*;
+<<<<<<< HEAD
+=======
+import javax.validation.constraints.*;
+>>>>>>> Company Entity
 import org.hibernate.annotations.Cache;
 import org.hibernate.annotations.CacheConcurrencyStrategy;
 
@@ -21,10 +25,12 @@ public class Company extends AbstractAuditingEntity implements Serializable {
     @Column(name = "id")
     private Long id;
 
-    @Column(name = "name")
+    @Size(min = 1, max = 100)
+    @Column(name = "name", length = 100)
     private String name;
 
-    @Column(name = "description")
+    @Size(min = 1, max = 100)
+    @Column(name = "description", length = 100)
     private String description;
 
     @Column(name = "is_active")
