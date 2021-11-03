@@ -42,48 +42,22 @@ export const CompanyDetail = (props: RouteComponentProps<{ id: string }>) => {
           </dt>
           <dd>{companyEntity.description}</dd>
           <dt>
-<<<<<<< HEAD
-=======
             <span id="createdBy">
               <Translate contentKey="javaTrainingApp.company.createdBy">Created By</Translate>
             </span>
           </dt>
           <dd>{companyEntity.createdBy}</dd>
           <dt>
->>>>>>> Company Entity
             <span id="isActive">
               <Translate contentKey="javaTrainingApp.company.isActive">Is Active</Translate>
             </span>
           </dt>
           <dd>{companyEntity.isActive ? 'true' : 'false'}</dd>
           <dt>
-<<<<<<< HEAD
             <Translate contentKey="javaTrainingApp.company.createdBy">Created By</Translate>
           </dt>
           <dd>{companyEntity.createdBy}</dd>
-          {console.log('arda')}
-          {console.log(companyEntity.createdBy)}
           <dt>
-            <Translate contentKey="javaTrainingApp.company.createdDate">Created Date</Translate>
-          </dt>
-          <dd>
-            {companyEntity.createdDate ? (
-              <TextFormat value={companyEntity.createdDate} type="date" format={APP_DATE_FORMAT} blankOnInvalid />
-            ) : null}
-          </dd>
-          <dt>
-            <Translate contentKey="javaTrainingApp.company.lastModifiedBy">Last Modified By</Translate>
-          </dt>
-          <dd>{companyEntity.lastModifiedBy}</dd>
-          <dt>
-            <Translate contentKey="javaTrainingApp.company.lastModifiedDate">Last Modified Date</Translate>
-          </dt>
-          <dd>
-            {companyEntity.lastModifiedDate ? (
-              <TextFormat value={companyEntity.lastModifiedDate} type="date" format={APP_DATE_FORMAT} blankOnInvalid />
-            ) : null}
-          </dd>
-=======
             <span id="createdDate">
               <Translate contentKey="javaTrainingApp.company.createdDate">Created Date</Translate>
             </span>
@@ -101,7 +75,6 @@ export const CompanyDetail = (props: RouteComponentProps<{ id: string }>) => {
             </span>
           </dt>
           <dd>{companyEntity.lastModifiedDate}</dd>
->>>>>>> Company Entity
         </dl>
         <Button tag={Link} to="/company" replace color="info" data-cy="entityDetailsBackButton">
           <FontAwesomeIcon icon="arrow-left" />{' '}

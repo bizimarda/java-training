@@ -12,5 +12,16 @@ public interface PatientMapper extends EntityMapper<PatientDTO, Patient> {
     @Named("id")
     @BeanMapping(ignoreByDefault = true)
     @Mapping(target = "id", source = "id")
-    PatientDTO toDtoId(Patient patient);
+    @Mapping(target = "firstName", source = "firstName")
+    @Mapping(target = "lastName", source = "lastName")
+    PatientDTO toDtoName(Patient patient);
+    /*
+    //PatientDTO toDtoId(Patient patient);
+
+    @Named("name")
+    @BeanMapping(ignoreByDefault = true)
+    @Mapping(target = "id", source = "id")
+    @Mapping(target = "firstName", source = "firstName")
+    @Mapping(target = "lastName", source = "lastName")
+    //PatientDTO toDtoName(Patient patient);*/
 }

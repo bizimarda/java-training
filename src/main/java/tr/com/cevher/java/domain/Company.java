@@ -2,10 +2,7 @@ package tr.com.cevher.java.domain;
 
 import java.io.Serializable;
 import javax.persistence.*;
-<<<<<<< HEAD
-=======
 import javax.validation.constraints.*;
->>>>>>> Company Entity
 import org.hibernate.annotations.Cache;
 import org.hibernate.annotations.CacheConcurrencyStrategy;
 
